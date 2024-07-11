@@ -13,7 +13,7 @@ function LoginButton() {
 
   return (
     <div>
-      <button onClick={handleClick} className='inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-peru-500 text-gainsboro-50 hover:bg-primary/90 h-9 rounded-md px-10 ml-auto'>Log In</button>
+      <button onClick={handleClick} className='inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-slate-400 hover:bg-peru-500 text-gainsboro-50 hover:bg-primary/90 h-9 rounded-md px-10 ml-auto'>Log In</button>
       {isOpen && (
         <dialog open className='w-96 h-content border border-peru-300 absolute rounded-md py-3 z-50'>
           <h2 className='font-bold text-3xl text-center'>Login</h2>

@@ -22,3 +22,17 @@
 3. heiarchy
 4. fix barney picture
 5. add more doctors
+
+## Log
+
+7 11
+Edits
+
+1. Grid to Flex Container Main content home Page.
+2. Refracorted Navigation Bar as own component.
+
+### ToDo
+
+1. Enhance Login & Overall UX/UI
+
+---
