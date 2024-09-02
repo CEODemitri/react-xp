@@ -2,7 +2,7 @@ import LoginButton from "./LoginButton";
 
 function NavBar() {
     return (
-        <div className="flex justify-between items-center gap-4 border mb-5 rounded dark:bg-gainsboro-700 p-2">
+        <div className="w-60 border rounded dark:bg-gainsboro-700 max-h-[100vh] p-4">
         <a className="flex items-center gap-2 font-semibold" href="https://demitri.vercel.app">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
