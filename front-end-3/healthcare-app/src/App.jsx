@@ -91,11 +91,14 @@ function App() {
             
             <div className="grid gap-4">
               <ScheduleVisit/>
-              <DoctorCard doctor={embid} />
-              <DoctorCard doctor={rogers} />
-              <DoctorCard doctor={barney} />
+              <div className="flex gap-8 flex-wrap">
+                <DoctorCard doctor={embid} />
+                <DoctorCard doctor={rogers} />
+                <DoctorCard doctor={barney} />
+              </div>
 
-              <div
+              {/* Saving for data */}
+              {/* <div
                 className="rounded-lg border bg-card text-card-foreground shadow-sm p-6"
                 data-v0-t="card"
               >
@@ -149,7 +152,7 @@ function App() {
                     Book
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

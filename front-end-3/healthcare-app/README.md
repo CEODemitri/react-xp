@@ -33,6 +33,6 @@ Edits
 
 ### ToDo
 
-1. Enhance Login & Overall UX/UI
+1. Enhance Login & Overall UX/UI [in progress]
 
 ---
