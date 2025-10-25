@@ -8,8 +8,8 @@ a repo consisting of various projects from certificate courses. here is the proo
    \*\* 10 / 25 / 25
 
 - [x] intro
-- [ x ] 1
-- [ x ] 2
+- [x] 1
+- [x] 2
 - [ ] 3
 - [ ] 4
 - [ ] 5
