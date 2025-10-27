@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useReducer } from 'react';
 import pluto from './images/pluto.jpeg';
 
 let color = 'blue';
@@ -45,16 +45,19 @@ function Main({planets}) {
 }
 
 function App() {
-  const [status, setStatus] = useState(true);
+  //const [status, setStatus] = useState(true);
   // console.log("App status:", status);
+
+  const [status, toggle] = useReducer((status) => !status)
 
   return (
     <>
       <h1>Temple: {status ? "Open" : "Closed"}</h1>
-      <button onClick={() => setStatus(!status)}>{status ? "Closed" : "Open"}</button>
+      {/* <button onClick={() => setStatus(!status)}>{status ? "Closed" : "Open"}</button> */}
+      <button onClick={toggle}>{status ? "Closed" : "Open"}</button>
       <Header possession="Block" year={new Date().getFullYear()}/>
       <h2>Hallo {color.toUpperCase()} Kosmos {sun}!</h2>
-      <Main planets={itemObject}/>
+      <Main planets={itemObject} onStatus={toggle}/>
     </>
   )
 }
