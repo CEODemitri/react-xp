@@ -11,11 +11,33 @@ function Header({possession, year}) {
   )
 }
 
+const items = [
+  'Pluto',
+  'Neptune',
+  'Uranus'
+]
+
+const itemObject = items.map((planet, i) =>  ({
+  id: i,
+  name: planet
+}))
+
+function Main({planets}) {
+  return (
+    <ul>
+      {planets.map((planet) => (
+        <li style={{listStyleType: "none"}} key={planet.id}>{planet.name}</li>
+      ))}
+    </ul>
+  )
+}
+
 function App() {
   return (
     <>
       <Header possession="Block" year={new Date().getFullYear()}/>
       <h2>Hallo {color.toUpperCase()} Kosmos {sun}!</h2>
+      <Main planets={itemObject}/>
     </>
   )
 }
