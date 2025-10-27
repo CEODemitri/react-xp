@@ -1,4 +1,6 @@
-import './App.css'
+import './App.css';
+import pluto from './images/pluto.jpeg';
+
 let color = 'blue';
 let sun = "☀️";
 
@@ -24,11 +26,20 @@ const itemObject = items.map((planet, i) =>  ({
 
 function Main({planets}) {
   return (
-    <ul>
-      {planets.map((planet) => (
-        <li style={{listStyleType: "none"}} key={planet.id}>{planet.name}</li>
-      ))}
-    </ul>
+   <>
+     <div>
+      <h2>Welcome to the real universe</h2>
+    </div>
+    <main>
+      {/* <img src="https://github.com/ceodemitri.png" alt="Pluto" height="200"/> */}
+      <img src={pluto} alt="Pluto" height={200} />
+      <ul>
+        {planets.map((planet) => (
+          <li style={{listStyleType: "none"}} key={planet.id}>{planet.name}</li>
+        ))}
+      </ul>
+    </main>
+   </> 
   )
 }
 
