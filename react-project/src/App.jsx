@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useReducer } from 'react';
+import { useEffect, useReducer } from 'react';
 import pluto from './images/pluto.jpeg';
 
 let color = 'blue';
@@ -49,6 +49,11 @@ function App() {
   // console.log("App status:", status);
 
   const [status, toggle] = useReducer((status) => !status)
+
+  useEffect(() => {
+    console.log(`Temple is now ${status ? "Open" : "Closed"}`);
+  }, [status])
+  // dependency array
 
   return (
     <>
