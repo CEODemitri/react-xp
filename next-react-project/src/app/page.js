@@ -10,6 +10,12 @@ export default function Home() {
         </span>{" "}
         on the Way
       </h1>
+      <Image
+        src="https://github.com/ceodemitri.png"
+        alt="Hehe"
+        width={200}
+        height={200}
+      />
     </div>
   );
 }
