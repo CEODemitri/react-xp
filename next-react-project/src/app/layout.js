@@ -24,6 +24,7 @@ function Header() {
         <Link href="/">Home</Link>
         <Link href="/river">River</Link>
         <Link href="/trees">Trees</Link>
+        <Link href="/history">History</Link>
       </nav>
     </header>
   );
