@@ -8,6 +8,7 @@ export default function River() {
         </span>{" "}
         Page
       </h1>
+      <form></form>
     </main>
   );
 }
