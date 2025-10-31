@@ -17,6 +17,8 @@ export default async function History() {
         Page
       </h1>
       {/* <div>{JSON.stringify(data)}</div> */}
+
+      {/* passing data as props */}
       <article>
         {data.map((name) => (
           <NameList
