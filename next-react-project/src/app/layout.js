@@ -20,12 +20,11 @@ export const metadata = {
 function Header() {
   return (
     <header>
-      <div>
-        <nav>
-          <Link href="/">Home</Link>
-          <Link href="/river">River</Link>
-        </nav>
-      </div>
+      <nav className="flex gap-4 p-4 bg-gray-200 dark:bg-gray-800">
+        <Link href="/">Home</Link>
+        <Link href="/river">River</Link>
+        <Link href="/trees">Trees</Link>
+      </nav>
     </header>
   );
 }
